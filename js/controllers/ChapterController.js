@@ -7,6 +7,7 @@ app.controller('ChapterController', ['$scope', 'books', '$routeParams', function
     if($routeParams.chapterId >= $scope.book.chapters.length - 1) {
       $scope.nextChapterIndex = '#';
     }
+    
   });
 
   // Using these properties to create the URLs in line 1 and line 11 of view/chapter.html
