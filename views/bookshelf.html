@@ -1,0 +1,12 @@
+<div class="bookshelf row">
+
+  <!-- Loop through myBooks and display each one with this HTML -->
+  <div class="book col-md-3" ng-repeat="myBook in myBooks">
+    <a href="#/books/{{$index}}">
+      <img ng-src="{{ myBook.cover }}">
+      <h3 class="title"> {{ myBook.title }} </h3>
+      <p class="author"> {{ myBook.author }} </p>
+    </a>
+  </div>
+
+</div>
